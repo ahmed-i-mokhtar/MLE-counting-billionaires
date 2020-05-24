@@ -1,7 +1,7 @@
 # MLE-counting-billionaires
 An Implementation of Maximum Likelihood Estimation to estimate the number of billionaires in different countries.
 
-Original Research Work: Keiding, Niels. Maximum Likelihood Estimation in the Birth-and-Death Process. Ann. Statist. 3 (1975), no. 2, 363--372. doi:10.1214/aos/1176343062. https://projecteuclid.org/euclid.aos/1176343062
+Original Research Work: Motta, Victor. (2019). Estimating Poisson pseudo-maximum-likelihood rather than log-linear model of a log-transformed dependent variable. RAUSP Management Journal, 54(4), 508-518. Epub December 13, 2019.https://doi.org/10.1108/rausp-05-2019-0110
 
 ## Background Information
 MLE is used to estimate parameters of a probability distribution to model a given random process.
