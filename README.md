@@ -39,20 +39,8 @@ pandas >= 0.25.3 </br>
 scipy >= 1.4.1 </br>
 statsmodels >= 0.11.1 </br>
 
-The dependent variable — the number of billionaires $ y_i $ in country $ i $ — is modeled as a function of GDP per capita, population size, and years membership in GATT and WTO.
+The dependent variable — the number of billionaires y<sub>i</sub> in country i — is modeled as a function of GDP per capita, population size, and years membership in GATT and WTO.
 
-Hence, the distribution of $ y_i $ needs to be conditioned on the vector of explanatory variables $ \mathbf{x}_i $.
+Hence, the distribution of y<sub>i</sub> needs to be conditioned on the vector of explanatory variables x<sub>i</sub>.
 
-The standard formulation — the so-called *poisson regression* model — is as follows:
-
-
-<a id='equation-poissonreg'></a>
-$$
-f(y_i \mid \mathbf{x}_i) = \frac{\mu_i^{y_i}}{y_i!} e^{-\mu_i}; \qquad y_i = 0, 1, 2, \ldots , \infty . \tag{1}
-$$
-
-$$
-\text{where}\ \mu_i
-     = \exp(\mathbf{x}_i' \boldsymbol{\beta})
-     = \exp(\beta_0 + \beta_1 x_{i1} + \ldots + \beta_k x_{ik})
-$$
+The standard formulation — the so-called *poisson regression* model —
