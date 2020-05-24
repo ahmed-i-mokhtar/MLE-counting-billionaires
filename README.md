@@ -33,10 +33,9 @@ Poisson distribution over y for different values of μ.
 ![download](https://user-images.githubusercontent.com/25469826/82766926-66905380-9e23-11ea-8a6d-fdf108369fbb.png)
 
 ### Requirements
-numpy
-matlotlib
-pandas
-scipy
-pandas
-statsmodels
+numpy >= 1.18.4 </br>
+matlotlib >= 3.2.1 </br>
+pandas >= 0.25.3 </br>
+scipy >= 1.4.1 </br>
+statsmodels >= 0.11.1 </br>
 
