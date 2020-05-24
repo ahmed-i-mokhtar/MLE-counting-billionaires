@@ -26,7 +26,11 @@ Hence we consider distributions that take values only in the nonnegative integer
 
 One integer distribution is the Poisson distribution, the probability mass function (pmf) of which is
 
-### f(y)=<sup>μ<sup>y</sup></sup>&frasl;<sub>y!<sub>e<sup>−μ</sup>,     y=0,1,2,…,∞
+### f(y)=<sup>μ<sup>y</sup></sup>&frasl;<sub>y!</sub>e<sup>−μ</sup>,     y=0,1,2,…,∞
+
+Poisson distribution over y for different values of μ.
+
+![download](https://user-images.githubusercontent.com/25469826/82766926-66905380-9e23-11ea-8a6d-fdf108369fbb.png)
 
 
 
