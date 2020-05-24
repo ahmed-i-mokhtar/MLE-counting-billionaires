@@ -9,4 +9,4 @@ MLE is used to estimate parameters of a probability distribution to model a give
 Given C sets of classes represented by w<sub>j</sub> (0 <= j < C) where each class have a number of samples and a feature vector x.
 
 Representing a class conditional density.
-### p(x | w<sub>j</sub>)
+### &#420;(x | w<sub>j</sub>)
