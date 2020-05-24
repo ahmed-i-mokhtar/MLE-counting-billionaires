@@ -12,7 +12,7 @@ Representing a class conditional density that fits a gaussian distribution.
 ### &#420;(x | w<sub>j</sub>) &asymp; &#413;(&#613;<sub>j</sub>, &#425;<sub>k</sub>),
 where &#613;<sub>j</sub> is the mean vector value for a given class and &#425;<sub>k</sub> is the standard deviation vector of its k samples.
 
-### &#420;(x | w<sub>j</sub>) &asymp; <sup>1</sup>&frasl;<sub>&sigma;&#8730;2&Pi;</sub>e<sup><sup>-(x-&#654;)<sup>2</sup></sup></sup>&frasl;<sub>1</sub></sup>
+### &#420;(x | w<sub>j</sub>) &asymp; <sup>1</sup>&frasl;<sub>&sigma;&#8730;2&Pi;</sub>e<sup>-(x-&#654;)<sup>2</sup>/2&sigma;<sup>2</sup></sup>
 
 
 
