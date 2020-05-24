@@ -6,7 +6,7 @@ Original Research Work: Keiding, Niels. Maximum Likelihood Estimation in the Bir
 ## Background Information
 MLE is used to estimate parameters of a probability distribution to model a given random process.
 
-Given C sets of classes represented by w<sub>j (0 <= j < C) where each class have a number of samples and a feature vector x.
+Given C sets of classes represented by w<sub>j<\> (0 <= j < C) where each class have a number of samples and a feature vector x.
 
 Representing a class conditional density.
-### p(x | w<sub>j)
+### p(x | w<sub>j<\>)
