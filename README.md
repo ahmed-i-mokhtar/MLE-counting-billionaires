@@ -57,7 +57,7 @@ pandas >= 0.25.3 </br>
 scipy >= 1.4.1 </br>
 statsmodels >= 0.11.1 </br>
 
-## Applying MLE numerically
+## Problum Formulation
 In our model for number of billionaires, the featue vector contains 4 parameters that we need to estimate.
 GDP per capita, population size, and years membership in GATT and WTO.
 
@@ -72,4 +72,13 @@ Intuitively, we want to find the B that best fits our data.
 
 Since the number of billionaires in different countries (y<sub>i</sub>) are independent on each other, we can model the likelihood funcion &#8466;(B) as follows.
 
-f(y<sub>i</sub> | x<sub>i</sub>, B) = &Pi;<sub>i=1</sub><sup>n</sup> <sup>μ<sup>y<sub>i</sub></sup></sup>&frasl;<sub>y!</sub>e<sup>−μ<sub>i</sub></sup>
+### f(y<sub>i</sub> | x<sub>i</sub>, B) = &Pi;<sub>i=1</sub><sup>i=n</sup>    <sup>μ<sup>y<sub>i</sub></sup></sup>&frasl;<sub>y!</sub>e<sup>−μ<sub>i</sub></sup>
+
+y<sub>i</sub> are conditional on both the values from our data x<sub>i</sub> and the parameters B.
+
+The problems is now formulated where the goal is to find B that will maximize the likelihood value.
+
+### max<sub>B</sub> &#8466;(B)
+
+In doing so it is generally easier to maximize the log-likelihood (consider differentiating  𝑓(𝑥)=𝑥exp(𝑥)  vs.  𝑓(𝑥)=log(𝑥)+𝑥).
+Given that taking a logarithm is a monotone increasing transformation, a maximizer of the likelihood function will also be a maximizer of the log-likelihood function.
