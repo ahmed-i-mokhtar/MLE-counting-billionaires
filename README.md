@@ -20,6 +20,7 @@ where &#613;<sub>j</sub> is the mean vector value for a given class and &#425;<s
 
 </br>
 </br>
+
 ## Counting Billionaires
 The number of billionaires is integer-valued.
 
@@ -29,7 +30,9 @@ Hence we consider distributions that take values only in the nonnegative integer
 
 One integer distribution is the Poisson distribution, the probability mass function (pmf) of which is
 </br>
+
 ### f(y)=<sup>μ<sup>y</sup></sup>&frasl;<sub>y!</sub>e<sup>−μ</sup>,     y=0,1,2,…,∞
+
 </br>
 Poisson distribution over y for different values of μ.
 </br>
@@ -41,6 +44,10 @@ The dependent variable — the number of billionaires y<sub>i</sub> in country i
 Hence, the distribution of y<sub>i</sub> needs to be conditioned on the vector of explanatory variables x<sub>i</sub>.
 </br>
 The standard formulation — the so-called *poisson regression* model —
+
+### f(y)=<sup>μ<sup>y</sup></sup>&frasl;<sub>y!</sub>e<sup>−μ</sup>,     y=0,1,2,…,∞
+### where, μ<sub>i</sub> = exp(x<sub>i</sub>B) = exp(B<sub>0</sub> + B<sub>1</sub>x<sub>i1</sub> + B<sub>2</sub>x<sub>i2</sub> + ... + B<sub>k</sub>x<sub>ik</sub>)
+
 
 ### Requirements
 numpy >= 1.18.4 </br>
@@ -57,5 +64,12 @@ x = [x<sub>0</sub>,x<sub>1</sub>,x<sub>2</sub>,x<sub>3</sub>]<sup>T<sup>
 
 Many distributions do not have nice, analytical solutions and therefore require numerical methods to solve for parameter estimates.
 
-One such numerical method is the Newton-Raphson algorithm.
-Our goal is to find the maximum likelihood estimate x'.
+One such numerical method is the Newton-Raphson algorithm. </br>
+Our goal is to find the maximum likelihood estimate x'. </b>
+To estimate the model using MLE, we want to maximize the likelihood that our estimate x' is the true parameter x.
+Intuitively, we want to find the x that best fits our data.
+
+
+
+
+Since all the 

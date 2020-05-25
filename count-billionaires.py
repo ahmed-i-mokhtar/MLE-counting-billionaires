@@ -31,5 +31,3 @@ plt.ylabel('Count')
 print("The plot proves that the best probability distribution is a poisson.")
 plt.show()
 
-
-
