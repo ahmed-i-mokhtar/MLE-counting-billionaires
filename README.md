@@ -45,9 +45,10 @@ Hence, the distribution of y<sub>i</sub> needs to be conditioned on the vector o
 </br>
 The standard formulation — the so-called *poisson regression* model —
 
-### f(y)=<sup>μ<sup>y</sup></sup>&frasl;<sub>y!</sub>e<sup>−μ</sup>,     y=0,1,2,…,∞
+### f(y)=<sup>μ<sup>y<sub>i</sub></sup></sup>&frasl;<sub>y!</sub>e<sup>−μ<sub>i</sub></sup>,                 y=0,1,2,…,∞
 ### where, μ<sub>i</sub> = exp(x<sub>i</sub>B) = exp(B<sub>0</sub> + B<sub>1</sub>x<sub>i1</sub> + B<sub>2</sub>x<sub>i2</sub> + ... + B<sub>k</sub>x<sub>ik</sub>)
 
+From the data observations x<sub>i</sub> and the arbitary paramteres B<sub>j</sub> we produce the best fit f(y)' to f(y).
 
 ### Requirements
 numpy >= 1.18.4 </br>
@@ -60,16 +61,15 @@ statsmodels >= 0.11.1 </br>
 In our model for number of billionaires, the featue vector contains 4 parameters that we need to estimate.
 GDP per capita, population size, and years membership in GATT and WTO.
 
-x = [x<sub>0</sub>,x<sub>1</sub>,x<sub>2</sub>,x<sub>3</sub>]<sup>T<sup>
+B = [B<sub>0</sub>,  B<sub>1</sub>,  B<sub>2</sub>,  B<sub>3</sub>]<sup>T<sup>
 
 Many distributions do not have nice, analytical solutions and therefore require numerical methods to solve for parameter estimates.
 
 One such numerical method is the Newton-Raphson algorithm. </br>
-Our goal is to find the maximum likelihood estimate x'. </b>
-To estimate the model using MLE, we want to maximize the likelihood that our estimate x' is the true parameter x.
-Intuitively, we want to find the x that best fits our data.
+Our goal is to find the maximum likelihood estimate B'. </b>
+To estimate the model using MLE, we want to maximize the likelihood that our estimate B' is the true parameter B.
+Intuitively, we want to find the B that best fits our data.
 
+Since the number of billionaires in different countries (y<sub>i</sub>) are independent on each other, we can model the likelihood funcion &#8466;(B) as follows.
 
-
-
-Since all the 
+f(y<sub>i</sub> | x<sub>i</sub>, B) = &Pi;<sub>i=1</sub><sup>n</sup> <sup>μ<sup>y<sub>i</sub></sup></sup>&frasl;<sub>y!</sub>e<sup>−μ<sub>i</sub></sup>
